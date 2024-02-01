@@ -72,6 +72,13 @@ class LcdApi:
         # Causes the cursor to be made visible
         self.hal_write_command(self.LCD_ON_CTRL | self.LCD_ON_DISPLAY |
                                self.LCD_ON_CURSOR)
+        
+    def move_disp_left(self):
+        self.hal_write_command(self.LCD_MOVE | self.LCD_MOVE_DISP)
+        
+    def move_disp_right(self):
+        self.hal_write_command(self.LCD_MOVE | self.LCD_MOVE_DISP |
+                               self.LCD_MOVE_RIGHT)
 
     def hide_cursor(self):
         # Causes the cursor to be hidden
