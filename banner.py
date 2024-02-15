@@ -10,12 +10,12 @@ mensaje = "HOLA MUNDO"
 lcd.move_to(2, 1)
 lcd.putstr(mensaje)
 
-""" while  True:
+while  True:
     lcd.move_to(2, 1)
     lcd.putstr(mensaje)
     lcd.show_cursor()
     for i in range(len(mensaje)):
         lcd.move_disp_right()
         utime.sleep(1)
-    lcd.clear()  """
+    lcd.clear() 
     
